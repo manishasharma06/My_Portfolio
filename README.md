@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio showcasing projects in Full Stack Development, DevOps, and Cloud Computing.
 
-**Live Site:** (manisha06-portfolio.netlify.app)
+**Live Site:** ([manisha06-portfolio.netlify.app](https://manisha06-portfolio.netlify.app/))
 
 ## Tech Stack
 - Java, Spring Boot, REST APIs
