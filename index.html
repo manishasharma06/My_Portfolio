@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manisha Sharma | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+<!-- Navbar -->
+<nav class="bg-blue-100 sticky top-0 z-50 shadow">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-blue-700">Manisha Sharma</h1>
+    <div class="space-x-6 text-sm font-medium">
+      <a href="#about" class="text-blue-700 hover:text-indigo-900">About</a>
+      <a href="#skills" class="text-blue-700 hover:text-indigo-900">Skills</a>
+      <a href="#projects" class="text-blue-700 hover:text-indigo-900">Projects</a>
+      <a href="#contact" class="text-blue-700 hover:text-indigo-900">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="bg-blue-50 text-center py-10 shadow">
+  <h2 class="text-4xl font-bold text-blue-700">Full-Stack Developer | DevOps Engineer</h2>
+  <p class="text-lg text-gray-600">Building scalable, cloud-native, and decentralized apps</p>
+</header>
+
+<!-- About -->
+<section class="max-w-5xl mx-auto px-4 py-12" id="about">
+<div class="flex justify-center mb-6">
+  <img src="photo.jpg" alt="Manisha Sharma" class="rounded-full w-40 h-40 object-cover shadow-lg">
+</div>
+
+  <h2 class="text-3xl font-bold text-blue-700 mb-4">About Me</h2>
+  <p class="text-gray-700 text-sm leading-relaxed">
+    I'm a full-stack developer and DevOps enthusiast with over 3 years of experience building scalable, secure, and cloud-native applications.
+    I specialize in backend technologies like Java and Spring Boot, and I actively leverage tools like Jenkins, Docker, and Kubernetes to streamline delivery.
+    I’ve also explored Web3 through my Master’s thesis in Germany, building a blockchain-based DApp for supply chain transparency.
+  </p>
+</section>
+
+<!-- Skills -->
+<section class="bg-blue-50 py-12 px-4" id="skills">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-700 mb-6">Skills & Expertise</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-gray-800">
+      <div>
+        <h3 class="font-semibold text-blue-600 mb-2">DevOps & Cloud</h3>
+        <ul class="list-disc ml-5">
+          <li>CI/CD with Jenkins, Docker, Kubernetes</li>
+          <li>Version Control: Git | Scripting: Bash, Python</li>
+          <li>Cloud: AWS</li>
+          <li>Environments: Linux, Windows, macOS</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-blue-600 mb-2">Development & Tools</h3>
+        <ul class="list-disc ml-5">
+          <li>HTML5, CSS, SQL/NoSQL, Core Java</li>
+          <li>Spring Boot, REST API Microservices</li>
+          <li>Tools: JIRA, Eclipse, NetBeans, VS Code, GitHub</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-blue-600 mb-2">Soft Skills</h3>
+        <ul class="list-disc ml-5">
+          <li>Agile & Scrum, Slack, MS Teams</li>
+          <li>Team Collaboration, Time Management</li>
+          <li>Analytical Thinking, Proactive Learning</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-blue-600 mb-2">Languages & Certifications</h3>
+        <ul class="list-disc ml-5">
+          <li>English: C1 | German: B1 (in progress) | Hindi: Native</li>
+          <li>Core & Advanced Java Programming</li>
+          <li>Web Designing, Agile Scrum Foundation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="max-w-6xl mx-auto px-4 py-12" id="projects">
+  <h2 class="text-3xl font-bold text-blue-700 mb-8 text-center">Projects</h2>
+  <div class="space-y-6">
+    <div class="border p-4 rounded shadow">
+      <h3 class="text-xl font-semibold text-blue-700 cursor-pointer" onclick="toggle('proj1')">Docker-Java-Kubernetes Microservice</h3>
+      <p class="text-sm text-gray-600">Built a scalable backend microservice with Docker and Kubernetes.</p>
+      <div id="proj1" class="hidden mt-3 text-sm text-gray-800 space-y-2">
+        <p><strong>Challenges:</strong> Manual setup, lack of orchestration, no auto-scaling or CI/CD.</p>
+        <p><strong>Approach:</strong> Containerized Java app with Docker, orchestrated via Kubernetes YAML config.</p>
+        <p><strong>Solution:</strong> Rolling updates, load balancing, health checks, Jenkins CI/CD integration.</p>
+        <p><strong>Tech Stack:</strong> Java, Spring Boot, Docker, Kubernetes, Jenkins, Maven</p>
+      </div>
+    </div>
+
+    <div class="border p-4 rounded shadow">
+      <h3 class="text-xl font-semibold text-blue-700 cursor-pointer" onclick="toggle('proj2')">GitHub Actions CI/CD Pipeline</h3>
+      <p class="text-sm text-gray-600">Automated Angular app deployment with GitHub Actions.</p>
+      <div id="proj2" class="hidden mt-3 text-sm text-gray-800 space-y-2">
+        <p><strong>Challenges:</strong> Manual deployment, slow feedback loops, lack of testing automation.</p>
+        <p><strong>Approach:</strong> Multi-step workflow using GitHub Actions to build, test, deploy Angular code.</p>
+        <p><strong>Solution:</strong> Reduced release time, improved quality through PR checks and auto-deploy.</p>
+        <p><strong>Tech Stack:</strong> Angular, GitHub Actions, Node.js, Firebase Hosting</p>
+      </div>
+    </div>
+
+    <div class="border p-4 rounded shadow">
+      <h3 class="text-xl font-semibold text-blue-700 cursor-pointer" onclick="toggle('proj3')">Google Cloud API Gateway</h3>
+      <p class="text-sm text-gray-600">Created a secure backend on GCP exposed via API Gateway.</p>
+      <div id="proj3" class="hidden mt-3 text-sm text-gray-800 space-y-2">
+        <p><strong>Challenges:</strong> Secure APIs with auth and standardized documentation.</p>
+        <p><strong>Approach:</strong> GCP Cloud Functions for logic and exposed APIs via API Gateway + OpenAPI.</p>
+        <p><strong>Solution:</strong> Granular access control, scalability, developer-friendly API docs.</p>
+        <p><strong>Tech Stack:</strong> GCP, Cloud Functions, API Gateway, OpenAPI, Postman</p>
+      </div>
+    </div>
+
+    <div class="border p-4 rounded shadow">
+      <h3 class="text-xl font-semibold text-blue-700 cursor-pointer" onclick="toggle('proj4')">Web3 Supply Chain DApp</h3>
+      <p class="text-sm text-gray-600">Blockchain-based DApp for transparent supply chain tracking.</p>
+      <div id="proj4" class="hidden mt-3 text-sm text-gray-800 space-y-2">
+        <p><strong>Challenges:</strong> Lack of visibility and traceability in supply chains.</p>
+        <p><strong>Approach:</strong> Smart contracts on Ethereum, Django frontend, MetaMask integration.</p>
+        <p><strong>Solution:</strong> Decentralized app with immutable tracking and wallet-based access.</p>
+        <p><strong>Tech Stack:</strong> Solidity, Django, Web3.js, MetaMask, Ganache</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="bg-blue-50 py-12 px-4" id="contact">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-700 mb-4">Contact</h2>
+    <p class="text-sm text-gray-800">📧 Email: <a class="text-blue-600" href="mailto:manishas513@gmail.com">manishas513@gmail.com</a></p>
+    <p class="text-sm text-gray-800">🐱 GitHub: <a class="text-blue-600" href="https://github.com/manishasharma06">github.com/manishasharma06</a></p>
+    <p class="text-sm text-gray-800">💼 LinkedIn: <a class="text-blue-600" href="https://www.linkedin.com/in/manisha-sharma06">linkedin.com/in/manisha-sharma06</a></p>
+  </div>
+</section>
+
+<footer class="text-center text-sm text-gray-500 py-6 border-t mt-10">
+  &copy; 2025 Manisha Sharma. All rights reserved.
+</footer>
+
+<script>
+  function toggle(id) {
+    document.getElementById(id).classList.toggle('hidden');
+  }
+</script>
+
+</body>
+</html>
